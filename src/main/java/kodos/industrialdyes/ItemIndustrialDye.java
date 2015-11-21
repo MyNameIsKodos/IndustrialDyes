@@ -1,5 +1,6 @@
 package kodos.industrialdyes;
 
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemDye;
 import net.minecraft.util.IIcon;
 import cpw.mods.fml.relauncher.Side;
@@ -12,7 +13,12 @@ public class ItemIndustrialDye extends ItemDye {
     @SideOnly(Side.CLIENT)
     private IIcon[] icons;
 
-    public ItemIndustrialDye(IIcon[] icons) {
-        this.icons = icons;
+    public ItemIndustrialDye() {
+        super();
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IIconRegister iconregister) {
+        icons = 
     }
 }
