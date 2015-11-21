@@ -1,4 +1,4 @@
-package com.kodos.industrialdyes;
+package kodos.industrialdyes;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 
-@Mod(modid = com.kodos.industrialdyes.IndustrialDyes.MODID, version = com.kodos.industrialdyes.IndustrialDyes.VERSION)
+@Mod(modid = kodos.industrialdyes.IndustrialDyes.MODID, version = kodos.industrialdyes.IndustrialDyes.VERSION)
 
 public class IndustrialDyes
 {

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "industrialdyes",
+  "name": "Industrial Dyes Mod",
+  "description": "A mod for streamlining your dyes!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Kodos"],
+  "credits": "Sangar, Vexatos, and",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
