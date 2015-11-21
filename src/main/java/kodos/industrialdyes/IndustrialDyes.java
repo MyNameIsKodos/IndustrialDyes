@@ -32,6 +32,7 @@ public class IndustrialDyes
         System.out.println(MODID + ": This is a test.");
 
         itemIndustrialDye = new ItemIndustrialDye();
+
         GameRegistry.registerItem(itemIndustrialDye, "industrialDye");
 
         OreDictionary.registerOre("dye", new ItemStack(itemIndustrialDye, 1, 32767));
