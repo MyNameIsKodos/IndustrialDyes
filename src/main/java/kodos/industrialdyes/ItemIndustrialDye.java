@@ -35,13 +35,14 @@ public class ItemIndustrialDye extends ItemDye {
     @Override
     public IIcon getIconFromDamage(int meta){
         if (meta > 16) { meta = 0; }
-        return this.icons(meta);
+        return this.icons[meta];
     }
 
     @Override
+    @SupressWarnings("unchecked")
     public void getSubItems(Item item, CreativeTabs tab, List list) {
         for(int i = 0; i < 16; i++) {
-            list.add(new ItemStack(item, l, i));
+            list.add(new ItemStack(item, 1, i));
         }
     }
 }
