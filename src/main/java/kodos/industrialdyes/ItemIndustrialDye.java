@@ -17,6 +17,9 @@ public class ItemIndustrialDye extends ItemDye {
 
     public ItemIndustrialDye() {
         super();
+        this.setHasSubtypes(true);
+        this.setCreativeTab(CreativeTabs.);
+        this.setUnlocalizedName("industrialDye");
     }
 
     @SideOnly(Side.CLIENT)
@@ -37,7 +40,7 @@ public class ItemIndustrialDye extends ItemDye {
 
     @Override
     public void getSubItems(Item item, CreativeTabs tab, List list) {
-        for(int i = 0, i < icons.length; i++) {
+        for(int i = 0; i < 16; i++) {
             list.add(new ItemStack(item, l, i));
         }
     }
