@@ -19,6 +19,10 @@ public class ItemIndustrialDye extends ItemDye {
 
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconregister) {
-        icons = 
+        icons = new IICon[16];
+
+        for(int i = 0; i < icons.length;, i++) {
+            icons[i] = iconregister.registerIcon(IndustrialDyes.MODID + ":" + (this.getUnlocalizedName().substring(5)) + i);
+        }
     }
 }
