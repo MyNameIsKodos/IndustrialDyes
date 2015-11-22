@@ -17,7 +17,7 @@ public class ItemIndustrialDye extends ItemDye {
 
     public ItemIndustrialDye() {
         super();
-        this.setHasSubtypes(true);
+        setHasSubtypes(true);
         this.setCreativeTab(IndustrialDyes.tabIDyes);
         this.setUnlocalizedName("industrialDye");
     }
