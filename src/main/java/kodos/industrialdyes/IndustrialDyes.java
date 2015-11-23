@@ -22,21 +22,19 @@ public class IndustrialDyes
     public static CreativeTabs tabIDyes = new CreativeTabs("industrialDyes") {
         @Override
         public Item getTabIconItem() {
-            return new ItemStack(itemIndustrialDye, 1, 15).getItem(); //TODO Make the stupid icon use the white dye.
+
+            return new ItemStack(itemIndustrialDye, 1, 0).getItem();
         }
     };
     
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-		// some example code
-        System.out.println(MODID + ": This is a test.");
 
         itemIndustrialDye = new ItemIndustrialDye();
 
         GameRegistry.registerItem(itemIndustrialDye, "industrialDye");
 
-        GameRegistry.addRecipe(new ShapedOreRecipe();
 
         OreDictionary.registerOre("dye", new ItemStack(itemIndustrialDye, 1, 32767));
         OreDictionary.registerOre("dyeBlack", new ItemStack(itemIndustrialDye, 1, 0));
@@ -58,3 +56,5 @@ public class IndustrialDyes
         System.out.println(MODID + ": Dye items have been Oredict'd!");
     }
 }
+
+	
